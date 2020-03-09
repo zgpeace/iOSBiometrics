@@ -11,8 +11,13 @@ import LocalAuthentication
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!").onAppear {
+//        Text("Hello, World!").onAppear {
+//            self.validateBiometrics()
+//        }
+        Button(action: {
             self.validateBiometrics()
+        }) {
+            Text("Authorize Biometric")
         }
     }
     
